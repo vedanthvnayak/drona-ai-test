@@ -21,6 +21,14 @@ $(document).ready(function() {
         startVoiceInput();
     });
 
+    // Add event listener to handle Enter key press
+    $('#user-input').keypress(function(event) {
+        if (event.which === 13) { // 13 is the key code for Enter
+            event.preventDefault();
+            sendMessage();
+        }
+    });
+
     // Function to send message
     function sendMessage() {
         var userInput = $('#user-input').val();
@@ -33,7 +41,8 @@ $(document).ready(function() {
                 data: {user_input: userInput},
                 success: function(response) {
                     var botResponse = response.response;
-                    $('#chat-container').append('<p class="bubble me"><strong style="color:blue;">Drona:</strong> ' + botResponse + '</p>');
+                    $('#chat-container').append('<p class="bubble me"><strong style="color:blue;">Drona:</strong> ' + botResponse.replace(/\*\*/g, '') + '</p>');
+
                     speak(botResponse);
                 }
             });
