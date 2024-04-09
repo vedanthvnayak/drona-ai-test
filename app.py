@@ -74,7 +74,7 @@ def chat():
 
     except Exception as e:
         response = f"An error occurred: {str(e)}"
-    print(response)
+     
     return jsonify({'response': response})
 
 
