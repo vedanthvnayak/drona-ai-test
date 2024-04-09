@@ -39,33 +39,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 
-    <script>
-        $(document).ready(function() {
-            // Toggle sound button
-            var soundOn = true;
-            $('#toggle-sound-btn').click(function() {
-                soundOn = !soundOn;
-                if (!soundOn) {
-                    speechSynthesis.cancel(); // Stop current speech
-                }
-            });
-
-            // Volume control
-            $('#volume-control').on('input', function() {
-                var volume = $(this).val() / 100;
-                setVolume(volume);
-            });
-
-            // Function to set volume
-            function setVolume(volume) {
-                var utterance = new SpeechSynthesisUtterance();
-                utterance.volume = volume;
-                speechSynthesis.speak(utterance); // A dummy utterance to set the volume
-            }
-
-
-        });
-    </script>
 </body>
 
 </html>
