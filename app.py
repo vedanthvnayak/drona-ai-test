@@ -46,7 +46,7 @@ def history():
 
 # Function to open applications
 def open_app(app_name):
-    if app_name in ["vscode","vs code", "visual studio code"]:
+    if app_name in ["vscode","vs code", "visual studio", "visual studio code"]:
         # subprocess.Popen(["code"])
         subprocess.Popen(["C:\\Users\\vinay\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"])
     elif app_name == "notepad":
@@ -66,11 +66,7 @@ def browse(query):
     webbrowser.open_new_tab(url)
     return f"Browsing {search_query}..." 
 
-
-
-
-
-
+ 
 @app.route('/chat', methods=['POST'])
 def chat():
     try:
