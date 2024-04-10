@@ -1,0 +1,13 @@
+#chat-container {
+
+    border: 1px solid #eee;
+    min-height: 350px;
+    height: 566px;
+    max-height: 650px;
+    overflow-y: auto;
+    background-color: #adcee4;
+    }
+  .ht {
+    height: 100vh;
+  }
+
