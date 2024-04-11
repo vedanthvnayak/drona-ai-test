@@ -66,8 +66,8 @@ $(document).ready(function () {
         url: "/chat",
         data: { user_input: userInput },
         success: function (response) {
-          var botResponse = response.response.replace(/\r?\n/g, "<br>");
-          botResponse = botResponse.replace(/\*\*/g, "");
+          var botResponse = response.response.replace(/\*\*/g, "");
+          botResponse = botResponse.replace(/<br>/g, ""); // Remove <br> tags
           $("#chat-container").append(
             '<p class="bubble me"><strong style="color:blue;">Drona:</strong> ' +
               botResponse +

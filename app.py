@@ -4,6 +4,7 @@ import subprocess
 import webbrowser
 import google.generativeai as genai
 
+
 app = Flask(__name__)
 
 # Configure Gemini API
@@ -47,8 +48,8 @@ def history():
 # Function to open applications
 def open_app(app_name):
     if app_name in ["vscode","vs code", "visual studio", "visual studio code"]:
-        # subprocess.Popen(["code"])
-        subprocess.Popen(["C:\\Users\\vinay\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"])
+        subprocess.Popen(["code"])
+        # subprocess.Popen(["C:\\Users\\vinay\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"])
     elif app_name == "notepad":
         subprocess.Popen(["notepad"])
     elif app_name == "calculator":
@@ -57,12 +58,27 @@ def open_app(app_name):
         webbrowser.open_new_tab("https://www.youtube.com/")
     else:
         return f"{app_name} Application not supported" 
-    return f"Opening {app_name} application" 
+    return f"Opening {app_name} application"
+def playMusic():
+    url = "https://www.youtube.com/watch?v=QtxeJ703w18&t=3s"
+
+    # Specify the browser path for Brave on Mac
+    brave_path = "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+
+    # Open the URL in Brave
+    webbrowser.register('brave', None, webbrowser.BackgroundBrowser(brave_path))
+    webbrowser.get('brave').open(url)
+    return "playing"
 
 # Function to browse query
 def browse(query):
-    search_query = query.split("browse ")[-1]  # Extract the term following "browse"
-    url = f"https://www.google.com/search?q={search_query}"
+    if "browse" and 'image' in query:
+        search_query = query.split("browse ")[-1]
+        url = f"https://www.google.com/search?q={search_query}+image"
+    if "browse" in query:
+        search_query = query.split("browse ")[-1]  # Extract the term following "browse"
+        url = f"https://www.google.com/search?q={search_query}"
+
     webbrowser.open_new_tab(url)
     return f"Browsing {search_query}..." 
 
@@ -71,20 +87,23 @@ def browse(query):
 def chat():
     try:
         user_input = request.form['user_input'].lower()
+        if 'open' or 'browse' in user_input:
+            if user_input.split()[0] == 'open':
+                response = open_app(user_input.split("open ")[-1])
+                return response
+            if user_input.split()[0] == 'browse':
+                response = browse(user_input)
+                return response
+        if "play music" in user_input:
+            resp = playMusic()
+            return resp
+        convo_data = {"user_input": user_input}
 
-        if user_input.split()[0] == 'open':
-            response = open_app(user_input.split("open ")[-1])
-        elif user_input.split()[0] == 'browse':
-            response = browse(user_input)
-        else:
-
-            convo_data = {"user_input": user_input}
-
-            convo = model.start_chat(history=[
+        convo = model.start_chat(history=[
                 {
                     "role": "user",
                     "parts": [
-                        "You name is Drona, you are an Aptitude solver which covers all the concepts of aptitude required for to crack the interview, the concept which you covers includes Quantitative Aptitude, Verbal ( English), Reasoning, Programming, Interview and related.  And you will not answer any other question which is not related to aptitude. and you are create by Vinay, Vedanth, Bharat and Veeresh from AIET."]
+                        "You name is Drona, you are an Aptitude solver which covers all the concepts of aptitude required for to crack the interview, the concept which you covers includes Quantitative Aptitude, Verbal ( English), Reasoning, Programming, Interview and related.  And you will not answer any other question which is not related to aptitude. and you are create by Vedanth,Vinay, Bharat and Veeresh from AIET."]
                 },
                 {
                     "role": "model",
@@ -93,22 +112,23 @@ def chat():
                 },
             ])
 
-            convo.send_message(user_input)
-            response = convo.last.text
+        convo.send_message(user_input)
+        response = convo.last.text
 
-            # Save the conversation data
-            convo_data["response"] = response
-            conversation_data.append(convo_data)
+        # Save the conversation data
+        convo_data["response"] = response
+        conversation_data.append(convo_data)
 
-            # Save conversation data to a JSON file
-            with open('conversation_data.json', 'w') as json_file:
+        # Save conversation data to a JSON file
+        with open('conversation_data.json', 'w') as json_file:
                 json.dump(conversation_data, json_file, indent=4)
 
     except Exception as e:
         response = f"An error occurred: {str(e)}"
-     
+
     return jsonify({'response': response})
 
 
 if __name__ == '__main__':
     app.run(debug=True)
+

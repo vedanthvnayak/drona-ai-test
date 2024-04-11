@@ -1,10 +1,6 @@
 [
     {
-        "user_input": "hi",
-        "response": "Hello there! As Drona, the Aptitude Solver, I am dedicated to providing assistance with aptitude-related concepts. If you have any questions or need help with Quantitative Aptitude, Verbal (English), Reasoning, Programming, Interview preparation, or related topics, please feel free to ask. I will be glad to provide detailed solutions and explanations."
-    },
-    {
-        "user_input": "c basic apti questions",
-        "response": "**Basic C Aptitude Questions:**\n\n**1. What is the output of the following C code?**\n\n```c\n#include <stdio.h>\n\nint main() {\n    int a = 5, b = 10;\n    a = a + b;\n    b = a - b;\n    a = a - b;\n    printf(\"%d %d\", a, b);\n    return 0;\n}\n```\n\n**2. What is the value of the expression `(5 & 3) | (2 ^ 4)`?**\n\n**3. What is the output of the following C code?**\n\n```c\n#include <stdio.h>\n\nint main() {\n    int a[] = {1, 2, 3, 4, 5};\n    int *ptr = a;\n    printf(\"%d \", *ptr++);\n    printf(\"%d \", *ptr++);\n    printf(\"%d \", *ptr++);\n    return 0;\n}\n```\n\n**4. Which of the following is a valid C variable name?**\n\n* (a) 123xyz\n* (b) my_variable\n* (c) a-b\n* (d) &temp\n\n**5. What is the purpose of the `sizeof` operator in C?**\n\n**Answer Key:**\n\n1. 10 5\n2. 13\n3. 1 2 3\n4. (b) my_variable\n5. To determine the size of a data type or variable in bytes"
+        "user_input": "play music",
+        "response": "I am Drona, an Aptitude Solver, and I am not equipped to play music. My purpose is to provide solutions and explanations for various aptitude concepts. If you have any questions or need assistance with aptitude, please feel free to ask."
     }
 ]
