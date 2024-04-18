@@ -100,9 +100,16 @@ def chat():
             convo_data["response"] = response
             conversation_data.append(convo_data)
 
-            # Save conversation data to a JSON file
-            with open('conversation_data.json', 'w') as json_file:
-                json.dump(conversation_data, json_file, indent=4)
+            # Load existing conversation data from the JSON file
+            with open('./static/conversation_data.json', 'r') as json_file:
+                existing_data = json.load(json_file)
+
+            # Update the existing conversation data with the new conversation_data
+            existing_data.extend(conversation_data)
+
+            # Save the updated conversation data back to the JSON file
+            with open('./static/conversation_data.json', 'w') as json_file:
+                json.dump(existing_data, json_file, indent=4)
 
     except Exception as e:
         response = f"An error occurred: {str(e)}"

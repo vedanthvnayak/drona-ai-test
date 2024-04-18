@@ -85,6 +85,7 @@ $(document).ready(function () {
         },
       });
     }
+
   }
 
   // Function to speak the bot's response
@@ -98,6 +99,5 @@ $(document).ready(function () {
     speak(about);
   }).trigger('click');
 
-
-
+  
 });

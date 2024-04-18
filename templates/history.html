@@ -1,67 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drona AI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="container ht">
+      <div class="row">
+        <div
+          class="d-flex flex-column ht p-3 bg-body-tertiary"
+          style="width: 280px"
+        >
+          <div class="text-center">
+            <img
+              src="static/images/aiet-logo.png"
+              class="rounded"
+              style="height: 100px"
+              alt="alvas logo"
+            />
+          </div>
+          <hr />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat History</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 20px;
-        }
+          <!-- Nav bar, Side dashboard -->
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="{{ url_for('index') }}" class="nav-link link-body-emphasis stop-voice">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-house"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
+                  />
+                </svg>
 
-        .chat-container {
-            max-width: 600px;
-            margin: auto;
-        }
+                <svg
+                  class="bi pe-none me-2"
+                  src="house.svg"
+                  width="16"
+                  height="16"
+                ></svg>
+                Home
+              </a>
+            </li>
 
-        .bubble {
-            margin: 10px;
-            padding: 10px;
-            border-radius: 10px;
-            border: 1px solid #ccc;
-            background-color: #f2f2f2;
-            display: inline-block;
-        }
+            <li>
+              <a href="#" class="nav-link link-body-emphasis active stop-voice">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-hourglass"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5m2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702c0 .7-.478 1.235-1.011 1.491A3.5 3.5 0 0 0 4.5 13v1h7v-1a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351v-.702c0-.7.478-1.235 1.011-1.491A3.5 3.5 0 0 0 11.5 3V2z"
+                  />
+                </svg>
+                <svg class="bi pe-none me-2" width="16" height="16">
+                  <use xlink:href="#speedometer2"></use>
+                </svg>
+                Usage
+              </a>
+            </li>
 
-        .user {
-            color: green;
-        }
+            <li>
+              <a href="https://drona-ai-mock.vercel.app/" class="nav-link link-body-emphasis stop-voice">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-video"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                  <path
+                    d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm10.798 11c-.453-1.27-1.76-3-4.798-3-3.037 0-4.345 1.73-4.798 3H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1z"
+                  />
+                </svg>
+                <svg class="bi pe-none me-2" width="16" height="16">
+                  <use xlink:href="#table"></use>
+                </svg>
+                Mock Interview
+              </a>
+            </li>
 
-        .bot {
-            color: blue;
-        }
-    </style>
-</head>
+            <li>
+              <a href="{{ url_for('about') }}" class="nav-link link-body-emphasis">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-info-square"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                  />
+                  <path
+                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                  />
+                </svg>
+                <svg class="bi pe-none me-2" width="16" height="16">
+                  <use xlink:href="#grid"></use>
+                </svg>
+                About
+              </a>
+            </li>
+          </ul>
+        </div>
 
-<body>
-    <div class="chat-container" id="chat-container"></div>
+        <div class="col">
+
+          <div class="d-flex align-items-center text-white text-center p-3 my-3  bg-primary rounded shadow-sm">
+              <h1 class="h6 mb-0  lh-1">Drona AI - Interview & Aptitude Assistant</h1>
+          </div>
+
+          
+          <div class="p-3 my-3 rounded shadow-sm" id="chat-container">
+            <h1 id="history" class="text-center"> Old Conversations</h1>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
-        const chatContainer = document.getElementById('chat-container');
+        fetch('/static/conversation_data.json')
+      .then(response => response.json())
+      .then(data => {
+      
+      data.forEach(message => {
 
-        // Function to fetch chat history from the file
-        async function fetchChatHistory() {
-            try {
-                const response = await fetch('/conversation_data.json');
-                const chatHistory = await response.json();
+      $("#chat-container").append(
+        '<p class="bubble you"><strong style="color:green;">You:</strong> ' +
+        message.user_input +
+          "</p>"
+      );
+      
+      var botResponse = message.response.replace(/\r?\n/g, "<br>");
+      botResponse = botResponse.replace(/\*\*/g, "");
+      $("#chat-container").append(
+      '<p class="bubble me"><strong style="color:blue;">Drona:</strong> ' +
+      botResponse +
+      "</p>"
+      );
 
-                // Loop through chat history and display messages
-                chatHistory.forEach(entry => {
-                    const userMessage = `<div class="bubble user">${entry.user_input}</div>`;
-                    const botMessage = `<div class="bubble bot">${entry.response}</div>`;
+     });
 
-                    chatContainer.innerHTML += userMessage + botMessage;
-                });
-            } catch (error) {
-                console.error('Error fetching chat history:', error);
-            }
-        }
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
 
-        // Call the function to fetch and display chat history
-        fetchChatHistory();
     </script>
-</body>
-
+    
+  </body>
 </html>

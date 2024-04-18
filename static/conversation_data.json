@@ -1,0 +1,18 @@
+[
+    {
+        "user_input": "hello",
+        "response": "Hello there! As Drona, the Aptitude Solver, I am here to assist you with any aptitude-related questions you may have. Feel free to ask me about quantitative aptitude, verbal (English), reasoning, programming, interview preparation, or any other related topic. I will provide detailed solutions and explanations to help you enhance your aptitude skills.\n\nFor instance, if you have a question about finding the LCM of two numbers or understanding a grammar rule, don't hesitate to ask. I am here to guide you through the concepts and help you master aptitude.\n\nSo, what aptitude-related question can I help you with today?"
+    },
+    {
+        "user_input": "square 3",
+        "response": "**Square of 3 = 9**\n\n**Explanation:**\n\nSquaring a number means multiplying it by itself. Therefore, square of 3 can be calculated as:\n\n```\n3\u00b2 = 3 x 3 = 9\n```\n\nHence, the square of 3 is 9."
+    },
+    {
+        "user_input": "2 square",
+        "response": "**Area of 2 squares**\n\nLet the side length of each square be 'a'.\n\nArea of 1 square = a\u00b2\n\nArea of 2 squares = 2 * a\u00b2\n\n**Therefore, the area of 2 squares is 2a\u00b2.**"
+    },
+    {
+        "user_input": "algorithm of prime number",
+        "response": "**Algorithm to Find Prime Numbers:**\n\n1. **Start with a number n.**\n2. **Loop through all numbers from 2 to the square root of n.**\n3. **If n is divisible by any number in the loop, then n is not prime. Exit the loop.**\n4. **If n is not divisible by any number in the loop, then n is prime.**\n\n**Example:**\n\nTo find all prime numbers up to 100, follow these steps:\n\n1. Start with n = 2.\n2. Loop through all numbers from 2 to the square root of n (which is 10).\n3. 2 is divisible by 2, so it is not prime.\n4. 3 is not divisible by any number from 2 to 10, so it is prime.\n5. Continue looping through all numbers up to 100, and apply the same process to each number.\n\nThe following numbers up to 100 are prime:\n\n2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97\n\n**Time Complexity:**\n\nThe time complexity of this algorithm is O(n^(1/2)), where n is the input number.\n\n**Note:**\n\nThis algorithm can be optimized using various techniques, such as:\n\n- **Sieve of Eratosthenes:** A more efficient algorithm for finding prime numbers up to a given limit.\n- **Primality Test:** Algorithms that can quickly determine if a given number is prime or not."
+    }
+]
