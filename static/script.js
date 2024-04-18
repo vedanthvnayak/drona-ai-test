@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
   var soundOn = true;
   $("#toggle-sound-btn").click(function () {
     soundOn = !soundOn;
@@ -6,6 +8,12 @@ $(document).ready(function () {
       speechSynthesis.cancel(); // Stop current speech
     }
   });
+
+  $(".stop-voice").click(
+    function () {
+        speechSynthesis.cancel(); // Stop current speech
+    }
+  );
 
   // Volume control
   $("#volume-control").on("input", function () {
@@ -84,4 +92,12 @@ $(document).ready(function () {
     var utterance = new SpeechSynthesisUtterance(text);
     speechSynthesis.speak(utterance);
   }
+
+  $("#about").click(function about(){
+    var about = $("#about").text();
+    speak(about);
+  }).trigger('click');
+
+
+
 });

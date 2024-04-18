@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drona A.I</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="static/images/aiet-logo.png" alt="AIET Logo" class="logo">
+        <nav>
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('history') }}">Usage</a>
+            <a href="https://drona-ai-mock.vercel.app/" target="_blank">Mock Interview</a>
+            <a href="{{ url_for('about') }}">About</a>
+
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1 class="heading">Drona A.I - Your Interview & Aptitude Assistant</h1>
+        <div id="chat-container"></div>
+        <div id="input-container">
+            <input type="text" id="user-input" placeholder="Enter your question...">
+            <button id="send-btn">Send</button>
+            <button id="voice-btn">🎤</button>
+            <button id="toggle-sound-btn">⏯️</button>
+        </div>
+        <!-- <div id="output-controls">
+        </div> -->
+    </div>
+    <!-- <div class="pcauto">
+        <h1>Pc automation</h1>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

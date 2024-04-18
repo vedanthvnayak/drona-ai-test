@@ -1,0 +1,208 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #007bff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 80%;
+    height: 20%;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.container {
+    margin-left: 220px;
+    width: calc(100% - 550px);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 100%;
+    color: black;
+    float: left; /* Keep the container on the left */
+    background-color: #51C3BC;
+}
+
+.pcauto {
+    width: calc(100% - 1130px); /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width for better responsiveness */
+    height: auto; /* Allow the height to adjust based on content */
+    background-color: #D5D5D5;
+    float: right; /* Position pcauto div to the right */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 100px; /* Add padding for better appearance */
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    margin-top: 20px; /* Adjust margin as needed */
+    margin-right: 10px;
+    word-wrap: break-word; /* Allow the text to wrap within the box */
+}
+
+
+
+#chat-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    min-height: 350px;
+    height: 566px;
+    max-height: 650px;
+    overflow-y: auto;
+    max-width: calc(100% - 40px);
+    background-color: #5196C3;
+
+
+}
+
+#input-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#input-container input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#input-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#input-container button:hover {
+    background-color: #0056b3;
+}
+
+#output-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* #toggle-sound-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-sound-btn:hover {
+    background-color: #0056b3;
+} */
+
+#volume-control {
+    width: 70%;
+}
+
+.heading {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .container {
+        margin-left: 10px;
+        width: calc(100% - 20px);
+    }
+
+    .pcauto {
+        width: 100%;
+        float: none; /* Reset float for smaller screens */
+        margin-top: 20px; /* Adjust margin as needed */
+    }
+}
+.bubble {
+            font-size: 16px;
+            position: relative;
+            display: inline-block;
+            clear: both;
+            margin-bottom: 8px;
+            padding: 13px 14px;
+            vertical-align: top;
+            border-radius: 5px;
+            &:before {
+                position: absolute;
+                top: 19px;
+                display: block;
+                width: 8px;
+                height: 6px;
+                content: '\00a0';
+                transform: rotate(29deg) skew(-35deg);
+            }
+            &.you {
+                float: left;
+                color: var(--white);
+                background-color: var(--blue);
+                align-self: flex-start;
+                animation-name: slideFromLeft;
+                &:before {
+                    left: -3px;
+                    background-color: var(--blue);
+                }
+            }
+            &.me {
+                float: right;
+                color: var(--dark);
+                background-color: #eceff1;
+                align-self: flex-end;
+                animation-name: slideFromRight;
+                &:before {
+                    right: -3px;
+                    background-color: #eceff1;
+                }
+            }
+        }
