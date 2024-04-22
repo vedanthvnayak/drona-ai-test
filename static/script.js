@@ -99,5 +99,11 @@ $(document).ready(function () {
     speak(about);
   }).trigger('click');
 
+  $("#p_survey").click(() => {
+    window.open("http://localhost/personality_survey-temp/");
+    // window.location.href = "http://localhost/personality_survey-temp/";
+
+  });
+
   
 });

@@ -14,5 +14,161 @@
     {
         "user_input": "algorithm of prime number",
         "response": "**Algorithm to Find Prime Numbers:**\n\n1. **Start with a number n.**\n2. **Loop through all numbers from 2 to the square root of n.**\n3. **If n is divisible by any number in the loop, then n is not prime. Exit the loop.**\n4. **If n is not divisible by any number in the loop, then n is prime.**\n\n**Example:**\n\nTo find all prime numbers up to 100, follow these steps:\n\n1. Start with n = 2.\n2. Loop through all numbers from 2 to the square root of n (which is 10).\n3. 2 is divisible by 2, so it is not prime.\n4. 3 is not divisible by any number from 2 to 10, so it is prime.\n5. Continue looping through all numbers up to 100, and apply the same process to each number.\n\nThe following numbers up to 100 are prime:\n\n2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97\n\n**Time Complexity:**\n\nThe time complexity of this algorithm is O(n^(1/2)), where n is the input number.\n\n**Note:**\n\nThis algorithm can be optimized using various techniques, such as:\n\n- **Sieve of Eratosthenes:** A more efficient algorithm for finding prime numbers up to a given limit.\n- **Primality Test:** Algorithms that can quickly determine if a given number is prime or not."
+    },
+    {
+        "user_input": "a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "To find the length of the train, we need to convert its speed from km/hr to m/s and then multiply by the time taken to cross the pole.\n\n**Step 1: Convert speed from km/hr to m/s**\n\n60 km/hr = (60 * 1000) / (60 * 60) m/s = 16.67 m/s\n\n**Step 2: Find the length of the train**\n\nLength of the train = Speed * Time\n= 16.67 m/s * 9 s\n= 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\nThe correct answer is: **150 metres**"
+    },
+    {
+        "user_input": "a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "To find the length of the train, we need to convert its speed from km/hr to m/s and then multiply by the time taken to cross the pole.\n\n**Step 1: Convert speed from km/hr to m/s**\n\n60 km/hr = (60 * 1000) / (60 * 60) m/s = 16.67 m/s\n\n**Step 2: Find the length of the train**\n\nLength of the train = Speed * Time\n= 16.67 m/s * 9 s\n= 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\nThe correct answer is: **150 metres**"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! I am Drona, an Aptitude Solver designed to assist you with various aptitude concepts.\n\nHow can I help you today? Do you have any questions related to:\n\n- Quantitative Aptitude\n- Verbal (English)\n- Reasoning\n- Programming\n- Interview and Related\n\nI am here to provide detailed solutions and explanations, so please feel free to ask."
+    },
+    {
+        "user_input": "a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "To find the length of the train, we need to convert its speed from km/hr to m/s and then multiply by the time taken to cross the pole.\n\n**Step 1: Convert speed from km/hr to m/s**\n\n60 km/hr = (60 * 1000) / (60 * 60) m/s = 16.67 m/s\n\n**Step 2: Find the length of the train**\n\nLength of the train = Speed * Time\n= 16.67 m/s * 9 s\n= 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\nThe correct answer is: **150 metres**"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! I am Drona, an Aptitude Solver designed to assist you with various aptitude concepts.\n\nHow can I help you today? Do you have any questions related to:\n\n- Quantitative Aptitude\n- Verbal (English)\n- Reasoning\n- Programming\n- Interview and Related\n\nI am here to provide detailed solutions and explanations, so please feel free to ask."
+    },
+    {
+        "user_input": " a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "**Step 1: Convert speed from km/hr to m/s**\n\nSpeed = 60 km/hr = (60 * 1000) / 60 / 60 = 16.67 m/s\n\n**Step 2: Calculate the length of the train using the formula:**\n\nLength of train = Speed \u00d7 Time\n\n**Step 3: Substitute the values**\n\nLength of train = 16.67 m/s \u00d7 9 s = 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\n**Answer: 150 metres**"
+    },
+    {
+        "user_input": "a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "To find the length of the train, we need to convert its speed from km/hr to m/s and then multiply by the time taken to cross the pole.\n\n**Step 1: Convert speed from km/hr to m/s**\n\n60 km/hr = (60 * 1000) / (60 * 60) m/s = 16.67 m/s\n\n**Step 2: Find the length of the train**\n\nLength of the train = Speed * Time\n= 16.67 m/s * 9 s\n= 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\nThe correct answer is: **150 metres**"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! I am Drona, an Aptitude Solver designed to assist you with various aptitude concepts.\n\nHow can I help you today? Do you have any questions related to:\n\n- Quantitative Aptitude\n- Verbal (English)\n- Reasoning\n- Programming\n- Interview and Related\n\nI am here to provide detailed solutions and explanations, so please feel free to ask."
+    },
+    {
+        "user_input": " a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "**Step 1: Convert speed from km/hr to m/s**\n\nSpeed = 60 km/hr = (60 * 1000) / 60 / 60 = 16.67 m/s\n\n**Step 2: Calculate the length of the train using the formula:**\n\nLength of train = Speed \u00d7 Time\n\n**Step 3: Substitute the values**\n\nLength of train = 16.67 m/s \u00d7 9 s = 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\n**Answer: 150 metres**"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! As Drona, the Aptitude Solver, I am here to assist you with any questions related to aptitude concepts. These include:\n\n**Quantitative Aptitude:**\n- Number systems\n- LCM and HCF\n- Percentage, ratio, and proportion\n- Time, speed, and distance\n- Algebra\n- Geometry\n- Trigonometry\n\n**Verbal (English):**\n- Grammar and usage\n- Vocabulary\n- Reading comprehension\n- Verbal reasoning\n\n**Reasoning:**\n- Logical reasoning\n- Analytical reasoning\n- Critical reasoning\n\n**Programming:**\n- Basic programming concepts\n- Data structures and algorithms\n\n**Interview and Related:**\n- Interview preparation tips\n- Resume writing\n- Job search strategies\n\nIf you have any questions or need assistance with any of these concepts, please feel free to ask. I am here to provide detailed solutions and explanations.\n\nPlease note that I can only answer questions related to the above-mentioned aptitude concepts. Questions unrelated to aptitude will not be addressed."
+    },
+    {
+        "user_input": "a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "To find the length of the train, we need to convert its speed from km/hr to m/s and then multiply by the time taken to cross the pole.\n\n**Step 1: Convert speed from km/hr to m/s**\n\n60 km/hr = (60 * 1000) / (60 * 60) m/s = 16.67 m/s\n\n**Step 2: Find the length of the train**\n\nLength of the train = Speed * Time\n= 16.67 m/s * 9 s\n= 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\nThe correct answer is: **150 metres**"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! I am Drona, an Aptitude Solver designed to assist you with various aptitude concepts.\n\nHow can I help you today? Do you have any questions related to:\n\n- Quantitative Aptitude\n- Verbal (English)\n- Reasoning\n- Programming\n- Interview and Related\n\nI am here to provide detailed solutions and explanations, so please feel free to ask."
+    },
+    {
+        "user_input": " a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "**Step 1: Convert speed from km/hr to m/s**\n\nSpeed = 60 km/hr = (60 * 1000) / 60 / 60 = 16.67 m/s\n\n**Step 2: Calculate the length of the train using the formula:**\n\nLength of train = Speed \u00d7 Time\n\n**Step 3: Substitute the values**\n\nLength of train = 16.67 m/s \u00d7 9 s = 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\n**Answer: 150 metres**"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! As Drona, the Aptitude Solver, I am here to assist you with any questions related to aptitude concepts. These include:\n\n**Quantitative Aptitude:**\n- Number systems\n- LCM and HCF\n- Percentage, ratio, and proportion\n- Time, speed, and distance\n- Algebra\n- Geometry\n- Trigonometry\n\n**Verbal (English):**\n- Grammar and usage\n- Vocabulary\n- Reading comprehension\n- Verbal reasoning\n\n**Reasoning:**\n- Logical reasoning\n- Analytical reasoning\n- Critical reasoning\n\n**Programming:**\n- Basic programming concepts\n- Data structures and algorithms\n\n**Interview and Related:**\n- Interview preparation tips\n- Resume writing\n- Job search strategies\n\nIf you have any questions or need assistance with any of these concepts, please feel free to ask. I am here to provide detailed solutions and explanations.\n\nPlease note that I can only answer questions related to the above-mentioned aptitude concepts. Questions unrelated to aptitude will not be addressed."
+    },
+    {
+        "user_input": " a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "**Step 1: Convert speed from km/hr to m/s**\n\nSpeed = 60 km/hr = (60 * 1000) / (60 * 60) = 16.67 m/s\n\n**Step 2: Calculate the length of the train using the formula:**\n\nLength of train = Speed * Time\n\n**Step 3: Substitute the values into the formula:**\n\nLength of train = 16.67 m/s * 9 s = 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\nThe correct answer is **150 meters**."
+    },
+    {
+        "user_input": "a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "To find the length of the train, we need to convert its speed from km/hr to m/s and then multiply by the time taken to cross the pole.\n\n**Step 1: Convert speed from km/hr to m/s**\n\n60 km/hr = (60 * 1000) / (60 * 60) m/s = 16.67 m/s\n\n**Step 2: Find the length of the train**\n\nLength of the train = Speed * Time\n= 16.67 m/s * 9 s\n= 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\nThe correct answer is: **150 metres**"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! I am Drona, an Aptitude Solver designed to assist you with various aptitude concepts.\n\nHow can I help you today? Do you have any questions related to:\n\n- Quantitative Aptitude\n- Verbal (English)\n- Reasoning\n- Programming\n- Interview and Related\n\nI am here to provide detailed solutions and explanations, so please feel free to ask."
+    },
+    {
+        "user_input": " a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "**Step 1: Convert speed from km/hr to m/s**\n\nSpeed = 60 km/hr = (60 * 1000) / 60 / 60 = 16.67 m/s\n\n**Step 2: Calculate the length of the train using the formula:**\n\nLength of train = Speed \u00d7 Time\n\n**Step 3: Substitute the values**\n\nLength of train = 16.67 m/s \u00d7 9 s = 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\n**Answer: 150 metres**"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! As Drona, the Aptitude Solver, I am here to assist you with any questions related to aptitude concepts. These include:\n\n**Quantitative Aptitude:**\n- Number systems\n- LCM and HCF\n- Percentage, ratio, and proportion\n- Time, speed, and distance\n- Algebra\n- Geometry\n- Trigonometry\n\n**Verbal (English):**\n- Grammar and usage\n- Vocabulary\n- Reading comprehension\n- Verbal reasoning\n\n**Reasoning:**\n- Logical reasoning\n- Analytical reasoning\n- Critical reasoning\n\n**Programming:**\n- Basic programming concepts\n- Data structures and algorithms\n\n**Interview and Related:**\n- Interview preparation tips\n- Resume writing\n- Job search strategies\n\nIf you have any questions or need assistance with any of these concepts, please feel free to ask. I am here to provide detailed solutions and explanations.\n\nPlease note that I can only answer questions related to the above-mentioned aptitude concepts. Questions unrelated to aptitude will not be addressed."
+    },
+    {
+        "user_input": " a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "**Step 1: Convert speed from km/hr to m/s**\n\nSpeed = 60 km/hr = (60 * 1000) / (60 * 60) = 16.67 m/s\n\n**Step 2: Calculate the length of the train using the formula:**\n\nLength of train = Speed * Time\n\n**Step 3: Substitute the values into the formula:**\n\nLength of train = 16.67 m/s * 9 s = 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\nThe correct answer is **150 meters**."
+    },
+    {
+        "user_input": "an exam was conducted and the following was analyzed. 4 men were able to check some exam papers in 8 days working 5 hours regularly. what is the total number of hours taken by 2 men in 20 days to check double the number of exam papers?",
+        "response": "**Step 1: Calculate the number of hours taken by 4 men to check the original number of papers**\n\n4 men * 8 days * 5 hours/day = 160 hours\n\n**Step 2: Calculate the number of papers checked by 4 men in 160 hours**\n\nLet's assume the original number of papers is 'x'.\n\nx / 160 = number of papers checked per hour\n\n**Step 3: Calculate the number of papers to be checked by 2 men in 20 days**\n\nDouble the number of original papers = 2x\n\n**Step 4: Calculate the number of hours taken by 2 men to check double the number of papers**\n\n2 men * 20 days * 5 hours/day = 200 hours\n\n**Step 5: Calculate the total number of hours taken by 2 men**\n\n200 hours / (number of papers checked per hour) = 200 hours / (x / 160)\n\n**Step 6: Simplify the expression**\n\n= 200 hours * 160 / x\n= **32000 / x**\n\nTherefore, the total number of hours taken by 2 men in 20 days to check double the number of exam papers is **32000 / x**."
+    },
+    {
+        "user_input": "a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "To find the length of the train, we need to convert its speed from km/hr to m/s and then multiply by the time taken to cross the pole.\n\n**Step 1: Convert speed from km/hr to m/s**\n\n60 km/hr = (60 * 1000) / (60 * 60) m/s = 16.67 m/s\n\n**Step 2: Find the length of the train**\n\nLength of the train = Speed * Time\n= 16.67 m/s * 9 s\n= 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\nThe correct answer is: **150 metres**"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! I am Drona, an Aptitude Solver designed to assist you with various aptitude concepts.\n\nHow can I help you today? Do you have any questions related to:\n\n- Quantitative Aptitude\n- Verbal (English)\n- Reasoning\n- Programming\n- Interview and Related\n\nI am here to provide detailed solutions and explanations, so please feel free to ask."
+    },
+    {
+        "user_input": " a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "**Step 1: Convert speed from km/hr to m/s**\n\nSpeed = 60 km/hr = (60 * 1000) / 60 / 60 = 16.67 m/s\n\n**Step 2: Calculate the length of the train using the formula:**\n\nLength of train = Speed \u00d7 Time\n\n**Step 3: Substitute the values**\n\nLength of train = 16.67 m/s \u00d7 9 s = 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\n**Answer: 150 metres**"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! As Drona, the Aptitude Solver, I am here to assist you with any questions related to aptitude concepts. These include:\n\n**Quantitative Aptitude:**\n- Number systems\n- LCM and HCF\n- Percentage, ratio, and proportion\n- Time, speed, and distance\n- Algebra\n- Geometry\n- Trigonometry\n\n**Verbal (English):**\n- Grammar and usage\n- Vocabulary\n- Reading comprehension\n- Verbal reasoning\n\n**Reasoning:**\n- Logical reasoning\n- Analytical reasoning\n- Critical reasoning\n\n**Programming:**\n- Basic programming concepts\n- Data structures and algorithms\n\n**Interview and Related:**\n- Interview preparation tips\n- Resume writing\n- Job search strategies\n\nIf you have any questions or need assistance with any of these concepts, please feel free to ask. I am here to provide detailed solutions and explanations.\n\nPlease note that I can only answer questions related to the above-mentioned aptitude concepts. Questions unrelated to aptitude will not be addressed."
+    },
+    {
+        "user_input": " a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "**Step 1: Convert speed from km/hr to m/s**\n\nSpeed = 60 km/hr = (60 * 1000) / (60 * 60) = 16.67 m/s\n\n**Step 2: Calculate the length of the train using the formula:**\n\nLength of train = Speed * Time\n\n**Step 3: Substitute the values into the formula:**\n\nLength of train = 16.67 m/s * 9 s = 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\nThe correct answer is **150 meters**."
+    },
+    {
+        "user_input": "an exam was conducted and the following was analyzed. 4 men were able to check some exam papers in 8 days working 5 hours regularly. what is the total number of hours taken by 2 men in 20 days to check double the number of exam papers?",
+        "response": "**Step 1: Calculate the number of hours taken by 4 men to check the original number of papers**\n\n4 men * 8 days * 5 hours/day = 160 hours\n\n**Step 2: Calculate the number of papers checked by 4 men in 160 hours**\n\nLet's assume the original number of papers is 'x'.\n\nx / 160 = number of papers checked per hour\n\n**Step 3: Calculate the number of papers to be checked by 2 men in 20 days**\n\nDouble the number of original papers = 2x\n\n**Step 4: Calculate the number of hours taken by 2 men to check double the number of papers**\n\n2 men * 20 days * 5 hours/day = 200 hours\n\n**Step 5: Calculate the total number of hours taken by 2 men**\n\n200 hours / (number of papers checked per hour) = 200 hours / (x / 160)\n\n**Step 6: Simplify the expression**\n\n= 200 hours * 160 / x\n= **32000 / x**\n\nTherefore, the total number of hours taken by 2 men in 20 days to check double the number of exam papers is **32000 / x**."
+    },
+    {
+        "user_input": "the numbers from 101 to 150 are written as, 101102103104105\u2026146147148149150. what will be the remainder when this total number is divided by 3?",
+        "response": "To find the remainder when the total number is divided by 3, we can use modular arithmetic.\n\n**Step 1: Find the sum of the digits in the total number.**\n\n1 + 0 + 1 + 1 + 0 + 2 + 1 + 0 + 3 + 1 + 0 + 4 + 1 + 0 + 5 + ... + 1 + 4 + 6 + 1 + 4 + 7 + 1 + 4 + 8 + 1 + 4 + 9 + 1 + 5 + 0 = 813\n\n**Step 2: Find the remainder when the sum of the digits is divided by 3.**\n\n813 \u00f7 3 = 271 R 0\n\nTherefore, the remainder when the total number is divided by 3 is **0**.\n\n**Alternative Method:**\n\nWe can also use the divisibility rule for 3, which states that a number is divisible by 3 if the sum of its digits is divisible by 3. In this case, the sum of the digits in the total number is 813, which is divisible by 3. Therefore, the total number is also divisible by 3, and the remainder when it is divided by 3 is **0**."
+    },
+    {
+        "user_input": "a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "To find the length of the train, we need to convert its speed from km/hr to m/s and then multiply by the time taken to cross the pole.\n\n**Step 1: Convert speed from km/hr to m/s**\n\n60 km/hr = (60 * 1000) / (60 * 60) m/s = 16.67 m/s\n\n**Step 2: Find the length of the train**\n\nLength of the train = Speed * Time\n= 16.67 m/s * 9 s\n= 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\nThe correct answer is: **150 metres**"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! I am Drona, an Aptitude Solver designed to assist you with various aptitude concepts.\n\nHow can I help you today? Do you have any questions related to:\n\n- Quantitative Aptitude\n- Verbal (English)\n- Reasoning\n- Programming\n- Interview and Related\n\nI am here to provide detailed solutions and explanations, so please feel free to ask."
+    },
+    {
+        "user_input": " a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "**Step 1: Convert speed from km/hr to m/s**\n\nSpeed = 60 km/hr = (60 * 1000) / 60 / 60 = 16.67 m/s\n\n**Step 2: Calculate the length of the train using the formula:**\n\nLength of train = Speed \u00d7 Time\n\n**Step 3: Substitute the values**\n\nLength of train = 16.67 m/s \u00d7 9 s = 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\n**Answer: 150 metres**"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! As Drona, the Aptitude Solver, I am here to assist you with any questions related to aptitude concepts. These include:\n\n**Quantitative Aptitude:**\n- Number systems\n- LCM and HCF\n- Percentage, ratio, and proportion\n- Time, speed, and distance\n- Algebra\n- Geometry\n- Trigonometry\n\n**Verbal (English):**\n- Grammar and usage\n- Vocabulary\n- Reading comprehension\n- Verbal reasoning\n\n**Reasoning:**\n- Logical reasoning\n- Analytical reasoning\n- Critical reasoning\n\n**Programming:**\n- Basic programming concepts\n- Data structures and algorithms\n\n**Interview and Related:**\n- Interview preparation tips\n- Resume writing\n- Job search strategies\n\nIf you have any questions or need assistance with any of these concepts, please feel free to ask. I am here to provide detailed solutions and explanations.\n\nPlease note that I can only answer questions related to the above-mentioned aptitude concepts. Questions unrelated to aptitude will not be addressed."
+    },
+    {
+        "user_input": " a train running at the speed of 60 km/hr crosses a pole in 9 seconds. what is the length of the train? 120 metres 180 metres 324 metres 150 metres",
+        "response": "**Step 1: Convert speed from km/hr to m/s**\n\nSpeed = 60 km/hr = (60 * 1000) / (60 * 60) = 16.67 m/s\n\n**Step 2: Calculate the length of the train using the formula:**\n\nLength of train = Speed * Time\n\n**Step 3: Substitute the values into the formula:**\n\nLength of train = 16.67 m/s * 9 s = 150 meters\n\nTherefore, the length of the train is **150 meters**.\n\nThe correct answer is **150 meters**."
+    },
+    {
+        "user_input": "an exam was conducted and the following was analyzed. 4 men were able to check some exam papers in 8 days working 5 hours regularly. what is the total number of hours taken by 2 men in 20 days to check double the number of exam papers?",
+        "response": "**Step 1: Calculate the number of hours taken by 4 men to check the original number of papers**\n\n4 men * 8 days * 5 hours/day = 160 hours\n\n**Step 2: Calculate the number of papers checked by 4 men in 160 hours**\n\nLet's assume the original number of papers is 'x'.\n\nx / 160 = number of papers checked per hour\n\n**Step 3: Calculate the number of papers to be checked by 2 men in 20 days**\n\nDouble the number of original papers = 2x\n\n**Step 4: Calculate the number of hours taken by 2 men to check double the number of papers**\n\n2 men * 20 days * 5 hours/day = 200 hours\n\n**Step 5: Calculate the total number of hours taken by 2 men**\n\n200 hours / (number of papers checked per hour) = 200 hours / (x / 160)\n\n**Step 6: Simplify the expression**\n\n= 200 hours * 160 / x\n= **32000 / x**\n\nTherefore, the total number of hours taken by 2 men in 20 days to check double the number of exam papers is **32000 / x**."
+    },
+    {
+        "user_input": "the numbers from 101 to 150 are written as, 101102103104105\u2026146147148149150. what will be the remainder when this total number is divided by 3?",
+        "response": "To find the remainder when the total number is divided by 3, we can use modular arithmetic.\n\n**Step 1: Find the sum of the digits in the total number.**\n\n1 + 0 + 1 + 1 + 0 + 2 + 1 + 0 + 3 + 1 + 0 + 4 + 1 + 0 + 5 + ... + 1 + 4 + 6 + 1 + 4 + 7 + 1 + 4 + 8 + 1 + 4 + 9 + 1 + 5 + 0 = 813\n\n**Step 2: Find the remainder when the sum of the digits is divided by 3.**\n\n813 \u00f7 3 = 271 R 0\n\nTherefore, the remainder when the total number is divided by 3 is **0**.\n\n**Alternative Method:**\n\nWe can also use the divisibility rule for 3, which states that a number is divisible by 3 if the sum of its digits is divisible by 3. In this case, the sum of the digits in the total number is 813, which is divisible by 3. Therefore, the total number is also divisible by 3, and the remainder when it is divided by 3 is **0**."
+    },
+    {
+        "user_input": "give numerical answer",
+        "response": "12\n\nThis is a simple addition problem. 5 + 7 equals 12."
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! I am Drona, the Aptitude Solver, here to assist you with your aptitude-related queries. If you have any questions or need help with concepts from quantitative aptitude, verbal (English), reasoning, programming, or interview preparation, feel free to ask. I will be glad to provide detailed solutions and explanations.\n\nLet me know how I can help you today! \ud83d\ude0a"
+    },
+    {
+        "user_input": "hi",
+        "response": "Hello there! I am Drona, the Aptitude Solver, here to assist you with your aptitude-related queries. If you have any questions or need help with concepts from quantitative aptitude, verbal (English), reasoning, programming, or interview preparation, feel free to ask. I will be glad to provide detailed solutions and explanations.\n\nLet me know how I can help you today! \ud83d\ude0a"
+    },
+    {
+        "user_input": "the numbers from 101 to 150 are written as, 101102103104105\u2026146147148149150. what will be the remainder when this total number is divided by 3?",
+        "response": "To find the remainder when the given number is divided by 3, we can use the following steps:\n\n1. Add all the digits of the number: 1 + 0 + 1 + 1 + 0 + 2 + 1 + 0 + 3 + 1 + 0 + 4 + ... + 1 + 4 + 8 + 1 + 4 + 9 + 1 + 5 + 0 = 702\n\n2. Find the remainder when the sum is divided by 3: 702 \u00f7 3 = 234 with a remainder of **0**.\n\nTherefore, the remainder when the given number is divided by 3 is **0**."
     }
 ]
